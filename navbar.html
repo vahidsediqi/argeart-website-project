@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Only css navbar</title>
-    <link rel="stylesheet" href="./navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
    
@@ -18,10 +21,14 @@
             <span></span>
         </a>
     
-        <h2>VS WEB DESIGN</h2>
+        <a class="logo" href="/">
+            <img src="./images/logo.png" alt="">
+        </a>
       </div>
    <div class="menu">
-       <h1>LOGO</h1>
+       <a href="/">
+           <img src="./images/logo.png" alt="">
+       </a>
        <ul class="menu__list">
            <li class="menu__item">
                <a href="#" class="menu__link">Home</a>
@@ -52,14 +59,28 @@
         </li>
        </ul>
    </div>
- </nav>
-<section style="margin-top: 250px;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vero consequatur facere quasi sunt, ut velit iure id beatae possimus tempora omnis pariatur harum recusandae impedit aliquid, cupiditate, nam eveniet.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At minima vero et necessitatibus exercitationem atque ad autem dicta iure non iusto incidunt, ut beatae excepturi similique laboriosam quo cum ea.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam provident cum eveniet facere autem consequatur, porro, ad fugiat ullam neque maxime. Dolores voluptatibus velit ipsam veritatis. Sequi, facilis ipsam?
+ </nav> 
+ <div class="hero__wrapper">
+    <!-- <img width="850px" class="hero__stars" src="./images/yildizlar-banner.png" alt=""> -->
+     <div class="hero__inner">
+        <div class="hero__title__wrapper">
+            <h2>markayı ileriye taşıyan</h2>
+            <h1 class="hero__main__title">
+                <span>
+                   dijital
+                </span>
+                <span>
+                   deneyim
+                </span>
+                <span>
+                   atölyesi
+                </span>
+            </h1>
+        </div>
+     </div>
+    
+ </div>
 
-</section>
-
-    <script src="navbar.js"></script>
+    <script src="./scripts/navbar.js"></script>
 </body>
 </html>

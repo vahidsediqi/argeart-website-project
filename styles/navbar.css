@@ -8,12 +8,10 @@ body{
     background-color: #fff;
     min-height: 200vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
 }
 
 .btn-logo-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
     padding-top: 45px;
     padding-left: 45px;
 }
@@ -21,10 +19,14 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #ffff;
     display: flex;
     justify-content: start;
-    padding-bottom: 60px;
+    z-index: 0;
+    margin-left: -35px;
+}
+.logo{
+    margin-left: 25px;
+    margin-top: -8px;
 }
 .nav-btn{
     z-index: 2;
@@ -62,7 +64,7 @@ body{
 }
 
 .nav-btn.is-active span {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .nav-btn.is-active span:nth-child(1){
@@ -90,7 +92,7 @@ body{
       }
 
    .menu {
-       background-color: #3d3d3d;
+       background-color: white;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -105,6 +107,7 @@ body{
        /* opacity: 0;
        visibility: hidden; */
        margin-top: -750px;
+       position: absolute;
    }
 
 
@@ -127,7 +130,7 @@ body{
        display: inline-flex;
        font-weight: bold;
        font-size: 32px;
-       color: white;
+       color: #171717;
        text-decoration: none;
        text-transform: uppercase;
    }
@@ -165,6 +168,47 @@ body{
 
    /* HERO SECTION */
 
-   .hero__wrapper{
-       margin-top: 55px;
-   }
+ .hero__wrapper {
+     width: 100%;
+ }
+ .hero__inner{
+     width: 94%;
+     height: 80vh;
+     border-left: 2px solid black;
+     border-right: 2px solid black;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url('/images/yildizlar-banner.png');
+     background-size: 750px;
+     background-repeat: no-repeat;
+     background-position:right top;
+ }
+
+ /* .hero__stars{
+     position: absolute;
+     top: 0;
+     right: 0;
+     z-index: auto;
+ } */
+
+ .hero__mountains{
+     position: absolute;
+     max-width: 94;
+     margin-top: auto;
+ }
+.hero__title__wrapper > h2 {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+ .hero__main__title{
+     display: flex;
+     flex-direction: column;
+     font-size: 85px;
+     line-height: 0.8;
+     font-weight: 900;
+     font-family: 'Poppins', sans-serif;
+ }
+
