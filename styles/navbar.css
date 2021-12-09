@@ -13,10 +13,10 @@ body{
 .btn-logo-wrapper {
     display: flex;
     padding-top: 45px;
-    padding-left: 45px;
+    padding-left: 20px;
+
 }
 .top-nav{
-    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -29,10 +29,11 @@ body{
     margin-top: -8px;
 }
 .nav-btn{
-    z-index: 2;
+    z-index: 44;
     display: flex;
     width: 20px;
     height: 20px;
+    position: fixed;
 }
 
 .nav-btn span {
@@ -107,7 +108,7 @@ body{
        /* opacity: 0;
        visibility: hidden; */
        margin-top: -750px;
-       position: absolute;
+       
    }
 
 
@@ -138,12 +139,12 @@ body{
    .menu__link:after{
        content: '';
        position: absolute;
-       bottom: -10px;
+       bottom: 0px;
        left: 0;
        width: 0;
        height: 5px;
        display: inline-flex;
-       background-color: blanchedalmond;
+       background-color: #171717;
        transition: .3s;
    }
 
@@ -151,6 +152,9 @@ body{
        width: 100%;
    }
 
+   .menu__link:hover {
+    color: black
+}
    /* NAV SOCIAL ICONS */
    .social__icons {
        display: flex;
@@ -170,28 +174,31 @@ body{
 
  .hero__wrapper {
      width: 100%;
+     z-index: 999999;
  }
  .hero__inner{
      width: 94%;
-     height: 80vh;
+     height: 90vh;
      border-left: 2px solid black;
      border-right: 2px solid black;
      margin: auto;
+     margin-top: -90px;
      display: flex;
      justify-content: center;
      align-items: center;
-     background-image: url('/images/yildizlar-banner.png');
-     background-size: 750px;
-     background-repeat: no-repeat;
-     background-position:right top;
+    background-image: url("../images/mountain.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain
+   
  }
 
- /* .hero__stars{
+ .hero__stars{
+    top: 25px;
+     right: 25px;
      position: absolute;
-     top: 0;
-     right: 0;
-     z-index: auto;
- } */
+ }
+
 
  .hero__mountains{
      position: absolute;
@@ -201,14 +208,14 @@ body{
 .hero__title__wrapper > h2 {
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     
 }
  .hero__main__title{
      display: flex;
      flex-direction: column;
-     font-size: 85px;
+     font-size: 95px;
      line-height: 0.8;
      font-weight: 900;
      font-family: 'Poppins', sans-serif;
  }
-
