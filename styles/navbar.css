@@ -13,7 +13,7 @@ body{
 .btn-logo-wrapper {
     display: flex;
     padding-top: 45px;
-    padding-left: 20px;
+    padding-left: 10px;
 
 }
 .top-nav{
@@ -69,8 +69,8 @@ body{
 }
 
 .nav-btn.is-active span:nth-child(1){
-    margin-top: 10px;
-    margin-left: 10px;
+   margin-top: 10px;
+   margin-left: 10px;
    transform: rotate(-45deg);
    height: 25px;
  
@@ -79,9 +79,8 @@ body{
 .nav-btn.is-active span:nth-child(2){
    margin-top: 10px;
    margin-left: 10px;
-    transform: rotate(45deg);
-    height: 25px;
-
+   transform: rotate(45deg);
+   height: 25px;
    } 
 
    .nav-btn.is-active span:nth-child(3){
@@ -115,7 +114,7 @@ body{
    .menu.is-active{
        /* opacity: 1;
        visibility: visible; */
-       margin-top: 1px;
+       margin-top: 0px;
    }
    .menu__list {
      display: flex;
@@ -174,29 +173,22 @@ body{
 
  .hero__wrapper {
      width: 100%;
-     z-index: 999999;
  }
  .hero__inner{
      width: 94%;
-     height: 90vh;
+     height: 100vh;
      border-left: 2px solid black;
      border-right: 2px solid black;
+     padding-bottom: 650px;
      margin: auto;
-     margin-top: -90px;
+     margin-top: -98px;
      display: flex;
      justify-content: center;
-     align-items: center;
-    background-image: url("../images/mountain.png");
+    /* background-image: url("../images/mountain.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain
-   
- }
-
- .hero__stars{
-    top: 25px;
-     right: 25px;
-     position: absolute;
+    */
  }
 
 
@@ -209,7 +201,8 @@ body{
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    
+    margin-top: 120px;
+    color: #010101;
 }
  .hero__main__title{
      display: flex;
@@ -218,4 +211,78 @@ body{
      line-height: 0.8;
      font-weight: 900;
      font-family: 'Poppins', sans-serif;
+     color: #010101;
+
+ }
+
+ /* HERO IMAGES */
+ .hero__stars{
+    top: 0;
+    right: 95px;
+    position: absolute;
+  }
+ 
+
+ .saturn{
+    position: absolute;
+    right: 55px;
+ }
+
+ .rocket{
+    position: absolute;
+    left: 180px;
+    top: 200px;
+ }
+
+ .star-dash{
+     position: absolute;
+     top: 50px;
+     left: 50%;
+ }
+
+ .cloud-left{
+     position: absolute;
+     left: 80px;
+     top: 90px;
+ }
+
+ .cloud-left-bottom{
+     position: absolute;
+     top: 56%;
+     left: 300px;
+ }
+ .cloud-right{
+     position: absolute;
+     right: 100px;
+     top: 250px;
+ }
+
+ .mountain-hero{
+     position:absolute;
+     bottom: -140px;
+     z-index: 1;
+ }
+
+ /* SERVICER SECTION */
+
+ .service__wrapper{
+     max-width: 100%;
+ }
+
+ .service__inner{
+     max-width: 94%;
+     margin: auto;
+     background-color: #070707;
+     height: 100vh;
+     position: relative;
+     z-index: 0;
+     background-image: url(../images/yildizler-hizmetler.png);
+     background-repeat: no-repeat;
+     background-position: top right;
+     background-size: 150%;
+ }
+
+ .white__star{
+     position: absolute;
+     left: 20px;
  }
