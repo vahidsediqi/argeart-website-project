@@ -13,7 +13,7 @@ body{
 .btn-logo-wrapper {
     display: flex;
     padding-top: 45px;
-    padding-left: 10px;
+    padding-left: 15px;
 
 }
 .top-nav{
@@ -25,7 +25,7 @@ body{
     margin-left: -35px;
 }
 .logo{
-    margin-left: 25px;
+    margin-left: 50px;
     margin-top: -8px;
 }
 .nav-btn{
@@ -169,13 +169,29 @@ body{
     color: white;
 }
 
+/* SIDEBAR ICONS */
+
+.side-bar__icons{
+    position:fixed;
+    top: 40%;
+}
+.side-bar__icons > li{
+ list-style: none;
+ margin-left: -20px;
+ margin-bottom: 20px;
+}
+
+.side-bar__icons > li > a {
+    color: #010101;
+    font-size: 27px;
+}
    /* HERO SECTION */
 
  .hero__wrapper {
      width: 100%;
  }
  .hero__inner{
-     width: 94%;
+     width: 93%;
      height: 100vh;
      border-left: 2px solid black;
      border-right: 2px solid black;
@@ -270,7 +286,7 @@ body{
  }
 
  .service__inner{
-     max-width: 94%;
+     max-width: 93%;
      margin: auto;
      background-color: #070707;
      height: 100vh;
