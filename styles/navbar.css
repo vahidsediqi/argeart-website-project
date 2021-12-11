@@ -182,7 +182,7 @@ body{
 }
 
 .side-bar__icons > li > a {
-    color: #010101;
+    color: #171717;
     font-size: 27px;
 }
    /* HERO SECTION */
@@ -195,11 +195,11 @@ body{
      height: 100vh;
      border-left: 2px solid black;
      border-right: 2px solid black;
-     padding-bottom: 650px;
      margin: auto;
-     margin-top: -98px;
      display: flex;
      justify-content: center;
+     margin-top: -98px;
+     padding-top: 98px;
     /* background-image: url("../images/mountain.png");
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -217,7 +217,6 @@ body{
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    margin-top: 120px;
     color: #010101;
 }
  .hero__main__title{
@@ -289,16 +288,185 @@ body{
      max-width: 93%;
      margin: auto;
      background-color: #070707;
-     height: 100vh;
+     height: auto;
      position: relative;
      z-index: 0;
      background-image: url(../images/yildizler-hizmetler.png);
      background-repeat: no-repeat;
      background-position: top right;
-     background-size: 150%;
+     background-size: 150%; 
+     position: relative;
+     padding-bottom: 95px;
+ }
+
+ .col__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 280px;
+    max-width: 80%;
+    margin: auto;
  }
 
  .white__star{
      position: absolute;
      left: 20px;
  }
+ .col__inner > h2{
+  color: white;
+  text-transform: capitalize;
+  font-size: 23px;
+  margin-top: 25px;
+ }
+
+ .service__col{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+ .col__inner  span{
+     color: white;
+     font-size: 14px;
+     border: 1px solid rgb(138, 138, 138);
+     display: block;
+     width: 200px;
+     margin-top: 10px;
+     padding: 8px;
+ }
+
+ .service__moon{
+     position: absolute;
+     left: 25px;
+     top: 140px;
+     z-index: 5;
+ }
+
+ .moon-man{
+     position:absolute;
+     right: 0px;
+     top: 130px;
+     width: 250px;
+ }
+
+ /* WHITE SECTION FOR ARROW BACKGROUND WRAPPER */
+ .white__section__for__arrow__bg__outer{
+    max-width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: #010101 solid 2px;
+    border-right: #010101 solid 2px;
+    position: relative;
+ }
+
+ .keyboard__section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+ }
+ .keyboard__image__wrapper > img {
+     max-width: 120%;
+     margin-left: -150px;
+     margin-top: 150px;
+ }
+
+ .keyboard__image__wrapper{
+     overflow: hidden;
+ }
+
+.keyboard__content__wrapper h2 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.keyboard__content__wrapper > h2:nth-child(3){
+  margin-top: 45px;
+}
+
+.keyboard__content__wrapper > h2:nth-child(5){
+    margin-top: 45px;
+  }
+
+.keyboard__content__wrapper {
+    max-width: 85%;
+}
+.section__btn{
+    color: #171717;
+    text-decoration: none;
+    border: 2px solid #171717;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 800;
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__btn > img {
+    width: 45px;
+}
+
+.section__btn:hover {
+    color: #171717;
+}
+.key_p_img {
+    position: absolute;
+    top: -50px;
+    width: 120px;
+    left: 20%;
+}
+
+.key_8_img {
+  position: absolute;
+  top: 145px;
+  left: 150px;
+  width: 110px;
+}
+
+.key_delete_img{
+  position: absolute;
+  top: 195px;
+  left: 370px;
+  width: 110px;  
+}
+
+/* IMAC SECTION */
+.mac__section{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 90vh;
+}
+.mac_section_image_wrapper > img {
+    width: 100%;
+    margin-top: -150px;
+}
+
+.mac_section_content_wrapper h2 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.mac_section_content_wrapper > h2:nth-child(3) {
+    margin-top: 45px;
+}
+.mac_section_content_wrapper {
+    max-width: 85%;
+}
+
+.mac_section_image_wrapper{
+    position: relative;
+}
+.power-cable {
+    position: absolute;
+    right: 55px;
+    width: 350px !important;
+    bottom: 0;
+    margin-bottom: -90px;
+}
