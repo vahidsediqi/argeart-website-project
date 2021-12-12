@@ -10,6 +10,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
 .btn-logo-wrapper {
     display: flex;
     padding-top: 45px;
@@ -370,6 +371,7 @@ body{
     border-left: #010101 solid 2px;
     border-right: #010101 solid 2px;
     position: relative;
+    padding-bottom: 55px;
  }
 
  .keyboard__section{
@@ -511,6 +513,10 @@ body{
     max-width: 85%;
 }
 
+.mourse__section__content__wrapper > h2 {
+    margin-top: 45px;
+    font-weight: 900;
+}
 .cursor_img{
     position: absolute;
     width: 105px;
@@ -533,6 +539,9 @@ body{
     max-width: 85%;
 }
 
+.chair__section__content__wrapper > h2 {
+    margin-top: 45px;
+}
 .chair__section__image__wrapper {
     position: relative;
 }
@@ -552,6 +561,175 @@ body{
     width: 210px;
     animation: leftRihgt 6s ease-in-out infinite;
     max-width: 100%;
+}
+/* LOGOS Section */
+
+.logo__section__outer__wrapper{
+    max-width: 93%;
+    margin: auto; 
+    position: relative;
+    background-color: #000;
+    background-image: url('../images/yildizler-hizmetler.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.logo__section_inner_wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+    margin: auto;
+}
+
+.logo_section_col > img {
+    max-width: 60%;
+    margin-top: 45px;
+}
+
+.logo_section_col {
+    padding-left: 45px;
+}
+
+.venus{
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 250px;
+}
+
+.rocks_for_logos {
+    position: absolute;
+    width: 180px;
+    bottom: 0;
+    left: -20px;
+}
+
+/* FOOTER */
+
+footer {
+    max-width: 93%;
+    margin: auto;
+    border-left: 1px #000 solid;
+    border-right: #000 1px solid;
+    height: 90vh;
+    background-image: url('../images/footer-zemin.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer__inner{
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.footer__inner ul {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.footer__cols > h2 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.footer__cols a {
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer__cols li {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.add-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer__cols p {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.footer_menu > h2 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.footer_menu {
+    border-left: 1px solid #000;
+    padding-left: 25px;
+}
+.kripi{
+    width: 95px;
+    right: 0;
+}
+
+.footer-sticky {
+    width: 100%;
+    height: 70px;
+    z-index: 88;
+    position: fixed;
+    background-color: white;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.sticky_footer_col > a {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    text-decoration: none;
+}
+
+.sticky_footer_col > a:hover  {
+  color: black;
+}
+.sticky_footer_col > a > h4 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.sticky_footer_col > a > span {
+    font-size: 16px;
+    font-weight: 400;
+}
+.sticky_footer_col {
+    display: flex;
+    justify-content: start;
+    border-left: 2px solid #000;
+    padding-left: 35px;
+}
+#service_link {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: start;
+   align-items: center;
+   font-size: 18px;
+   font-weight: 900;
+}
+
+#service_link > img {
+    margin-left: 55px;
 }
 /* ANIMATIMATION */
 
