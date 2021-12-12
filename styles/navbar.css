@@ -29,7 +29,7 @@ body{
     margin-top: -8px;
 }
 .nav-btn{
-    z-index: 44;
+    z-index: 100;
     display: flex;
     width: 20px;
     height: 20px;
@@ -102,7 +102,7 @@ body{
        left: 0;
        right: 0;
        padding: 45px;
-       z-index: 1;
+       z-index: 99;
        transition: 1s;
        /* opacity: 0;
        visibility: hidden; */
@@ -205,6 +205,7 @@ body{
     background-repeat: no-repeat;
     background-size: contain
     */
+    z-index: 3;
  }
 
 
@@ -241,12 +242,18 @@ body{
  .saturn{
     position: absolute;
     right: 55px;
+    top: 0;
+    transform: translatey(0px);
+	animation: leftRihgt 6s ease-in-out infinite;
+    max-width: 100%;
  }
 
  .rocket{
     position: absolute;
     left: 180px;
     top: 200px;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
  }
 
  .star-dash{
@@ -275,7 +282,7 @@ body{
  .mountain-hero{
      position:absolute;
      bottom: -140px;
-     z-index: 1;
+     z-index: 5;
  }
 
  /* SERVICER SECTION */
@@ -297,14 +304,16 @@ body{
      background-size: 150%; 
      position: relative;
      padding-bottom: 95px;
+     overflow: hidden;
  }
+
 
  .col__wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     padding-top: 280px;
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;
  }
 
@@ -338,15 +347,19 @@ body{
  .service__moon{
      position: absolute;
      left: 25px;
-     top: 140px;
+     top: 150px;
      z-index: 5;
+     animation: leftRihgt 6s ease-in-out infinite;
+     max-width: 100%;
  }
 
  .moon-man{
      position:absolute;
-     right: 0px;
-     top: 130px;
-     width: 250px;
+     right: -110px;
+     top: 180px;
+     width: 350px;
+     transform: translatey(0px);
+     animation: moreLeftRihgt 18s ease-in-out infinite;
  }
 
  /* WHITE SECTION FOR ARROW BACKGROUND WRAPPER */
@@ -362,7 +375,7 @@ body{
  .keyboard__section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 95vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
  }
@@ -418,6 +431,8 @@ body{
     top: -50px;
     width: 120px;
     left: 20%;
+    animation: leftRihgt 5s ease-in-out infinite;
+    max-width: 100%;
 }
 
 .key_8_img {
@@ -432,6 +447,8 @@ body{
   top: 195px;
   left: 370px;
   width: 110px;  
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }
 
 /* IMAC SECTION */
@@ -441,7 +458,7 @@ body{
     align-items: center;
     justify-content: center;
     justify-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 .mac_section_image_wrapper > img {
     width: 100%;
@@ -469,4 +486,116 @@ body{
     width: 350px !important;
     bottom: 0;
     margin-bottom: -90px;
+    transform: translatey(0px);
+	animation: leftRihgt 6s ease-in-out infinite;
+}
+
+/* MOUSE SECTION */
+
+.mouse__section__wrapper{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.mourse__section__image__wrapper > img {
+    width: 85%;
+    margin-top: 250px;
+    
+}
+
+.mourse__section__content__wrapper{
+    max-width: 85%;
+}
+
+.cursor_img{
+    position: absolute;
+    width: 105px;
+    top: 95px;
+    left: 20%;
+    animation: leftRihgt 6s ease-in-out infinite;
+    max-width: 100%;
+}
+
+.chair__section__wrapper {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.chair__section__content__wrapper{
+    max-width: 85%;
+}
+
+.chair__section__image__wrapper {
+    position: relative;
+}
+.chair__section__image__wrapper > img:nth-child(1) {
+    width: 90%;
+    margin: auto;
+}
+
+.chair__section__image__wrapper{
+    position: relative;
+}
+
+.tire__image{
+    position: absolute;
+    bottom: -50px;
+    right: 56%;
+    width: 210px;
+    animation: leftRihgt 6s ease-in-out infinite;
+    max-width: 100%;
+}
+/* ANIMATIMATION */
+
+@keyframes float {
+	0% {
+
+        transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-45px);
+	}
+	100% {
+
+        transform: translatey(0px);
+	}
+}
+
+/* left and right */
+@keyframes leftRihgt {
+	0% {
+
+        transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-45px);
+	}
+	100% {
+
+        transform: translatex(0px);
+	}
+}
+
+/* MORE left and right */
+@keyframes moreLeftRihgt {
+	0% {
+
+        transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-250px);
+	}
+	100% {
+
+        transform: translatex(0px);
+	}
+    
 }

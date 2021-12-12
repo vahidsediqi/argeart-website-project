@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move images on mouse move</title>
+
+    <style>
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+       .card{
+           width: 400px;
+           background-color: #171717;
+           background-image: url('./images/yildizler-hizmetler.png');
+           background-size: contain;
+           padding: 55px;
+           border-radius: 15px;
+       }
+
+       .card > img {
+           width: 100%;
+       }
+    </style>
+</head>
+
+<body>
+    
+    <div class="card">
+        <img data-tilt data-tilt-max="18" data-tilt-speed="200" data-tilt-perspective="3000" src="./images/astronot.png" alt="">
+    </div>
+
+
+    <script>
+
+    </script>
+<script src="./vanilla-tilt.js"></script>
+</body>
+</html>
