@@ -15,7 +15,6 @@ body{
     display: flex;
     padding-top: 45px;
     padding-left: 15px;
-
 }
 .top-nav{
     top: 0;
@@ -526,6 +525,7 @@ body{
     max-width: 100%;
 }
 
+/* CHAIR SECTION */
 .chair__section__wrapper {
     display: grid;
     grid-template-columns: 40% 50%;
@@ -541,6 +541,7 @@ body{
 
 .chair__section__content__wrapper > h2 {
     margin-top: 45px;
+    font-weight: 900;
 }
 .chair__section__image__wrapper {
     position: relative;
@@ -574,6 +575,8 @@ body{
     background-position: top right;
     background-size: 100%;
     overflow: hidden;
+    display: none;
+
 }
 
 .logo__section_inner_wrapper {
@@ -621,6 +624,7 @@ footer {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 100%;
+    display: none;
 }
 
 .footer__inner{

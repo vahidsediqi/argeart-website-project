@@ -1,0 +1,245 @@
+@media screen and (max-width: 992px) {
+    .btn-logo-wrapper {
+        padding-left: 15px;
+        margin-top: 75px;
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 9999;
+        background-color: white;
+    }
+    .nav-btn{
+        z-index: 100;
+        display: flex;
+        width: auto;
+        height: 45px;
+        position: static;
+        margin-top: 25px;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 25px;
+      }
+
+    .logo{
+      margin-top: 25px;
+    }
+
+    .innerlogo{
+        display: none;
+    }
+    .hero__inner{
+      border: 0px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      position: relative;
+      padding-top: 230px;
+      
+      
+    }
+
+    .mountain-hero{
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+    .hero__title__wrapper > h2 {
+    font-size: 32px;
+    }
+
+    .hero__main__title{
+        display: flex;
+        flex-direction: column;
+        font-size: 45px;
+        line-height: 1;
+    }
+
+    .saturn{
+        right: 55px;
+        top: 155px;
+        max-width: 45%;
+     }
+    .star-dash{
+        display: none;
+    }
+     .rocket{
+        position: absolute;
+        left: 0px;
+        top: 420px;
+        animation: none 6s ease-in-out infinite;
+        width: 30%;
+     }
+
+
+     .cloud-left{
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: -110px;
+        width: 100%;
+    }
+   
+    .cloud-left-bottom{
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 35%;
+    }
+    .cloud-right{
+        position: absolute;
+        right: 100px;
+        top: 250px;
+        display: none;
+    }
+     /* Services */
+     .service__wrapper{
+         margin-top: 130px;
+    }
+
+    .col__wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 55px;
+        justify-content: center;
+        padding-top: 35px;
+        max-width: 100%;
+        margin: auto;
+     }
+    .service__moon{
+        position: absolute;
+        left: 0px;
+        top: 25px;
+        z-index: 5;
+        animation: leftRihgt 6s ease-in-out infinite;
+        max-width: 22%;
+    }
+   
+    .moon-man{
+        position:absolute;
+        right: -25px;
+        top: 55px;
+        width: 350px;
+        transform: translatey(0px);
+        animation: leftRihgt 18s ease-in-out infinite;
+        max-width: 45%;
+    }
+
+     /* WHITE SECTION FOR ARROW BACKGROUND WRAPPER */
+ .white__section__for__arrow__bg__outer{
+ 
+ }
+
+/* Keyboard Section */
+.keyboard__section{
+    grid-template-columns: 1fr;
+    height: auto;
+ }
+
+ .keyboard__content__wrapper {
+   width: 100%;
+   padding: 65px 25px 25px 25px;
+}
+
+.keyboard__image__wrapper > img {
+    max-width: 100%;
+    margin-left: -2px;
+    margin-top: 95px;
+}
+
+.key_p_img {
+    max-width: 25%;
+    left: auto;
+    right: 50%;
+}
+
+.key_8_img {
+  position: absolute;
+  top: 0px;
+  left: auto;
+  right: 45px;
+  width: 65px;
+}
+
+.key_delete_img{
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  width: 85px;  
+  transform: translatey(0px);
+  animation: none 6s ease-in-out infinite;
+}
+
+
+/* IMACE SECTION */
+
+.mac__section {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto; 
+}
+
+.mac_section_image_wrapper > img {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 45px;
+}
+
+.power-cable {
+    position: absolute;
+    right: 55px;
+    bottom: -25px;
+    max-width: 150px;
+}
+
+/* MOUSE SECTION */
+.mouse__section__wrapper{
+    height: 100%;
+    grid-template-columns: 100%;  
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* CHAIR SECTION */
+
+  .chair__section__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.chair__section__content__wrapper {
+    margin-top: 55px;
+}
+.tire__image{
+    position: absolute;
+    bottom: 0;
+    top: 250px;
+    right: auto;
+    left: 20%;
+    animation: leftRihgt 6s ease-in-out infinite;
+    max-width: 50%;
+}
+  .mourse__section__content__wrapper{
+    max-width: 100%;
+    padding: 25px;
+}
+
+ .footer-sticky  {
+     display: none;
+ }
+
+ .side-bar__icons{
+    display: none;
+}
+  }
