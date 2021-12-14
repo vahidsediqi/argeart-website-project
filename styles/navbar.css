@@ -575,8 +575,6 @@ body{
     background-position: top right;
     background-size: 100%;
     overflow: hidden;
-    display: none;
-
 }
 
 .logo__section_inner_wrapper {
@@ -624,7 +622,6 @@ footer {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 100%;
-    display: none;
 }
 
 .footer__inner{
@@ -641,7 +638,9 @@ footer {
     list-style: none;
     margin-left: -30px;
 }
-
+.add-for-mob {
+    display: none;
+}
 .footer__cols > h2 {
     font-size: 18px;
     font-weight: 900;
@@ -652,6 +651,11 @@ footer {
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
+}
+
+.add-tel{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .footer__cols li {

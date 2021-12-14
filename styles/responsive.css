@@ -1,4 +1,5 @@
 @media screen and (max-width: 992px) {
+  
     .btn-logo-wrapper {
         padding-left: 15px;
         margin-top: 75px;
@@ -41,11 +42,16 @@
       text-align: center;
       height: auto;
       position: relative;
-      padding-top: 230px;
-      
-      
+      padding-top: 260px;
+
     }
 
+    .hero__stars{
+        top: 150px;
+        right: 22px;
+        position: absolute;
+        width: 100%;
+      }
     .mountain-hero{
       left: 0;
       right: 0;
@@ -58,7 +64,7 @@
     .hero__main__title{
         display: flex;
         flex-direction: column;
-        font-size: 45px;
+        font-size: 55px;
         line-height: 1;
     }
 
@@ -73,7 +79,7 @@
      .rocket{
         position: absolute;
         left: 0px;
-        top: 420px;
+        top: 170px;
         animation: none 6s ease-in-out infinite;
         width: 30%;
      }
@@ -88,10 +94,7 @@
     }
    
     .cloud-left-bottom{
-        position: absolute;
-        top: 45%;
-        left: 0;
-        width: 35%;
+        display: none;
     }
     .cloud-right{
         position: absolute;
@@ -215,7 +218,7 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
-    height: 100vh;
+    height: auto;
 }
 
 .chair__section__content__wrapper {
@@ -234,6 +237,86 @@
     max-width: 100%;
     padding: 25px;
 }
+
+/* LOGOS */
+
+.logo__section__outer__wrapper{
+    background-image: url('../images/yildizler-hizmetler.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 250%;
+    overflow: hidden;
+}
+.logo__section_inner_wrapper{
+    grid-template-columns: 1fr;
+    height: auto;
+}
+
+.venus{
+    width: 40%;
+}
+.rocks_for_logos{
+    width: 25%;
+}
+
+/* Site footer */
+
+.footer__inner{
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    grid-gap: 20px;
+    grid-template-areas:
+                "a b c"
+                "d d d";
+    
+}
+
+.m1 {
+    grid-area: a;
+}
+.m2 {
+    grid-area: b;
+}
+.m3 {
+    grid-area: c;
+}
+.m4 {
+    grid-area: d;
+    margin-bottom: 55px;
+}
+.add-tel{
+    display: none;
+}
+
+.add-for-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+footer {
+    max-width: 93%;
+    margin: auto;
+    border-left: 1px #000 solid;
+    border-right: #000 1px solid;
+    height: 100vh;
+    background-image: url('../images/footer-zemin.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.footer_menu {
+    border-left: 1px solid #000;
+    padding-left: 8px;
+}
+
+/* sticky footer */
 
  .footer-sticky  {
      display: none;
