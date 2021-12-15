@@ -1,11 +1,4 @@
-@font-face {font-family: "Galano Grotesque";
-    src: url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.eot"); /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.woff2") format("woff2"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.woff") format("woff"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.svg#Galano Grotesque") format("svg"); /* iOS 4.1- */
-}
+
 
 *{
     margin: 0;
@@ -16,9 +9,13 @@
 body{
     background-color: #fff;
     min-height: 200vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
 
 .btn-logo-wrapper {
     display: flex;
@@ -256,8 +253,8 @@ body{
      flex-direction: column;
      font-size: 95px;
      line-height: 0.8;
-     font-weight: bold;
-     font-family: sans-serif;
+     font-weight: 900;
+     font-family: 'Inter', sans-serif;
      color: #010101;
 
  }
@@ -378,7 +375,7 @@ body{
      margin-top: 10px;
      padding: 8px;
      transition: ease-in-out 0.3s;
-     font-weight: 900;
+     font-weight: 400;
     }
 
     .col__inner a {
@@ -706,7 +703,6 @@ footer {
 
 .footer__inner ul {
     list-style: none;
-    margin-left: -30px;
 }
 .add-for-mob {
     display: none;
