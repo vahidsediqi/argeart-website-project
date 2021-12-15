@@ -273,17 +273,21 @@ body{
      position: absolute;
      left: 80px;
      top: 90px;
+  
  }
 
  .cloud-left-bottom{
      position: absolute;
      top: 56%;
      left: 300px;
+     
  }
  .cloud-right{
      position: absolute;
      right: 100px;
      top: 250px;
+     transform: translatey(0px);
+     animation: leftRihgt 6s ease-in-out infinite;
  }
 
  .mountain-hero{
