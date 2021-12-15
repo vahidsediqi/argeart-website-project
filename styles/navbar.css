@@ -382,7 +382,18 @@ body{
     border-right: #010101 solid 2px;
     position: relative;
     padding-bottom: 55px;
+    /* background-image: url('../images/line.png');
+    background-size: 100%;
+    background-position: bottom right;
+    background-repeat: no-repeat; */
  }
+
+ .line-image{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+ }
+ 
 
  .keyboard__section{
     display: grid;
