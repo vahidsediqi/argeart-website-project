@@ -37,6 +37,23 @@
         display: flex;
         margin-top: 30px;
     }
+
+    .side_bar_contact_btn{
+        /* position: fixed;
+        right: -10px;
+        top: 10%;
+        transform: rotate(-90deg); */
+        display: none;
+    } 
+
+    .line-image{
+        /* position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 0; */
+        display: none;
+    }
+    
     .logo{
       margin-top: 25px;
     }
