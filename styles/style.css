@@ -1,3 +1,12 @@
+@font-face {font-family: "Galano Grotesque";
+    src: url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/96092db40c3de99f4a5298fe02b82e27.svg#Galano Grotesque") format("svg"); /* iOS 4.1- */
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -232,8 +241,8 @@ body{
      flex-direction: column;
      font-size: 95px;
      line-height: 0.8;
-     font-weight: 900;
-     font-family: 'Poppins', sans-serif;
+     font-weight: bold;
+     font-family: "Galano Grotesque", sans-serif;
      color: #010101;
 
  }
