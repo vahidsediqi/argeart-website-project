@@ -796,3 +796,81 @@ footer {
 	}
     
 }
+
+/* XL SCREEN STYLES */
+
+@media (min-width: 1700px) {
+    .hero__inner {
+       padding-top: 190px;
+    }
+
+    .hero__main__title{
+        display: flex;
+        flex-direction: column;
+        font-size: 110px;
+        line-height: 0.8;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+        color: #010101;
+   
+    }
+
+    .saturn{
+        position: absolute;
+        right: 55px;
+        top: 0;
+        transform: translatey(0px);
+        animation: leftRihgt 6s ease-in-out infinite;
+        width: auto;
+     }
+    
+     .rocket{
+        position: absolute;
+        left: 280px;
+        top: 290px;
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        width: 350px;
+     }
+
+     .cloud-left{
+        position: absolute;
+        left: 18%;
+        width: 35%;
+     
+    }
+   
+    .cloud-left-bottom{
+        position: absolute;
+        top: 46%;
+        left: 30%;
+        width: 500px;
+        
+    }
+    .cloud-right{
+        position: absolute;
+        right: 100px;
+        top: 250px;
+        transform: translatey(0px);
+        animation: leftRihgt 6s ease-in-out infinite;
+    }
+
+    .keyboard__section{
+        height: 80vh;
+     }
+
+     .mac__section{
+        height: 80vh;
+    }
+
+    .mouse__section__wrapper{
+        height: 80vh;
+      }
+      .chair__section__wrapper {
+        height: 80vh;
+    }
+    footer {
+        height: 65vh;
+    }
+    
+}
