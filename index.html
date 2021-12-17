@@ -18,6 +18,7 @@
     <!-- Local styles -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -187,7 +188,7 @@
         <img class="key_p_img" src="./images/tus-p.png" alt="p image">
         <img id="moveit" class="key_8_img moveit" src="./images/tus-8.png" alt="8 image">
         <img class="key_delete_img" src="./images/tus-delete.png" alt="8 image">
-        <div class="keyboard__image__wrapper">
+        <div data-aos="flip-up" class="keyboard__image__wrapper">
             <img src="./images/keyboard.png" alt="">
         </div>
         <div class="keyboard__content__wrapper">
@@ -210,7 +211,7 @@
     <!-- Keyboard section ends -->
 
     <div class="mac__section">
-        <div class="mac_section_content_wrapper">
+        <div data-aos="slide-left" data-aos-duration="3100" class="mac_section_content_wrapper">
             <h2>Web Geliştirme</h2>
             <p>
                 Önceden planlanan ekran tasarımının teknik uygulaması ile yeni web sitenizi hayata geçiriyoruz.
@@ -226,8 +227,8 @@
             <br>
             <a class="section__btn" href="#">Doğru tespitler <img src="./images/arrowIcon.png" alt="arrow icon"></a>
         </div>
-        <div class="mac_section_image_wrapper">
-            <img src="./images/imac_optimized.png" alt="imac">
+        <div data-aos="slide-right" data-aos-duration="3100" class="mac_section_image_wrapper">
+            <img  src="./images/imac_optimized.png" alt="imac">
             <img class="power-cable" src="./images/power_optimized.png" alt="power cable">
         </div>
     </div>
@@ -375,6 +376,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="./scripts/navbar.js"></script>
-    <script src="./vanilla-tilt.js"></script>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
