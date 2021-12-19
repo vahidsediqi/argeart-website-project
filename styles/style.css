@@ -756,8 +756,7 @@ footer {
 
 .footer-sticky {
     width: 100%;
-    height: 70px;
-    z-index: 9;
+    z-index: 999;
     position: fixed;
     background-color: white;
     border-top: 2px solid #000;
@@ -766,6 +765,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+}
+
+.sticky_footer_col{
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .sticky_footer_col > ul li a {
@@ -797,24 +801,48 @@ footer {
     padding-left: 35px;
 }
 
-/* submenu */
+/* submenu  DROP UP*/
 
 .sub-menu-list {
     visibility: hidden;
     opacity: 0;
     position: absolute;
     left: -35px;
-    width: 340px;
-    top: -135px;
+    width: 325px;
+    top: -165px;
     transform: translateY(3em);
     z-index: -1;
-    transition: ease-in-out 0.8s;
-    padding: 25px;
+    transition: ease-in-out 0.4s;
+    padding: 0px;
+    border: 2px solid black;
+}
+
+
+
+.sub-menu-list > li {
+    width: 100%;
+    padding: 15px;
+    transition: ease-in-out .4s;
+}
+
+.sub-menu-list > li > a{
+
+    transition: ease-in-out .4s;
+}
+
+.sub-menu-list > li:hover {
+    background-color: black;
+    color: white;
+}
+
+.sub-menu-list > li:hover > a {
+    color: white;
 }
 
 .submenu-wrapper{
     position: relative;
 }
+
 .submenu-wrapper:focus .sub-menu-list,
 .submenu-wrapper:focus-within .sub-menu-list,
 .submenu-wrapper:hover .sub-menu-list {
@@ -1010,7 +1038,5 @@ footer {
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
 
-/* move it */
-
-
-  
+/* black hover */
+/* Bounce To Right */
