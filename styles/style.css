@@ -770,6 +770,7 @@ footer {
 .sticky_footer_col{
     padding-top: 12px;
     padding-bottom: 12px;
+    position: relative;
 }
 
 .sticky_footer_col > ul li a {
@@ -807,9 +808,10 @@ footer {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    left: -35px;
-    width: 325px;
-    top: -165px;
+    left: 0;
+    right:0;
+    width: 100%;
+    top: -155px;
     transform: translateY(3em);
     z-index: -1;
     transition: ease-in-out 0.4s;
@@ -823,6 +825,7 @@ footer {
     width: 100%;
     padding: 15px;
     transition: ease-in-out .4s;
+    cursor: pointer;
 }
 
 .sub-menu-list > li > a{
@@ -840,7 +843,6 @@ footer {
 }
 
 .submenu-wrapper{
-    position: relative;
 }
 
 .submenu-wrapper:focus .sub-menu-list,
