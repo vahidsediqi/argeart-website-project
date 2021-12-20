@@ -1,4 +1,32 @@
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: url('../GalanoGrotesque-SemiBold.woff2') format('woff2'),
+        url('../GalanoGrotesque-SemiBold.woff') format('woff'),
+        url('../GalanoGrotesque-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../GalanoGrotesqueExtraBold.woff2') format('woff2'),
+        url('../GalanoGrotesqueExtraBold.woff') format('woff'),
+        url('../GalanoGrotesqueExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: url('../GalanoGrotesque-Medium.woff2') format('woff2'),
+        url('GalanoGrotesque-Medium.woff') format('woff'),
+        url('../GalanoGrotesque-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 *{
     margin: 0;
@@ -8,15 +36,30 @@
 
 body{
     background-color: #fff;
-    min-height: 200vh;
-    font-family: 'Inter', sans-serif;
+    font-family: 'GalanoGrotesque';
+    font-weight: 600;
+    font-style: normal;
 }
 
-p{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+p{ 
+    font-family: 'GalanoGrotesque';
+        font-weight: normal; 
+    font-style: normal;
 }
 
+h2 {
+    font-family: 'GalanoGrotesque';
+}
+
+a{
+    font-family: 'GalanoGrotesque';
+}
+li {
+    font-family: 'GalanoGrotesque';
+}
+span {
+    font-family: 'GalanoGrotesque';
+}
 .btn-logo-wrapper {
     display: flex;
     padding-top: 45px;
@@ -253,8 +296,8 @@ p{
      flex-direction: column;
      font-size: 95px;
      line-height: 0.8;
+     font-family: 'Galano Grotesque';
      font-weight: 900;
-     font-family: 'Inter', sans-serif;
      color: #010101;
 
  }
@@ -716,7 +759,8 @@ footer {
     color: #000;
     text-decoration: none;
     font-size: 13px;
-    font-weight: 600;
+    font-family: 'GalanoGrotesque';
+    font: 600;
 }
 
 .add-tel{
@@ -742,7 +786,9 @@ footer {
 
 .footer_menu > h2 {
     font-size: 18px;
-    font-weight: 900;
+    font-family: 'GalanoGrotesque';
+    font-weight: 500;
+    font-style: normal;
 }
 
 .footer_menu {
@@ -826,6 +872,7 @@ footer {
     padding: 15px;
     transition: ease-in-out .4s;
     cursor: pointer;
+
 }
 
 .sub-menu-list > li > a{
@@ -926,11 +973,18 @@ footer {
     .hero__main__title{
         display: flex;
         flex-direction: column;
-        font-size: 110px;
         line-height: 0.8;
-        font-weight: 900;
-        font-family: 'Poppins', sans-serif;
+        font-style: normal;
         color: #010101;
+        margin-top: 5px;
+        font-size: 118px;
+        font-family: 'Galano Grotesque';
+        src: url('../GalanoGrotesqueExtraBold.woff2') format('woff2'),
+            url('../GalanoGrotesqueExtraBold.woff') format('woff'),
+            url('../GalanoGrotesqueExtraBold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
         
     }
 
@@ -961,9 +1015,9 @@ footer {
    
     .cloud-left-bottom{
         position: absolute;
-        top: 46%;
+        top: 51%;
         left: 30%;
-        width: 500px;
+        width: 480px;
         
     }
     .cloud-right{
