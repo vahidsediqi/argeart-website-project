@@ -290,6 +290,15 @@
     grid-template-columns: 1fr;
     
 }
+
+/* contact page */
+.contact-outer-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -75px;
+    padding-top: 190px;
+  }
+  
 /* Site footer */
 
 .footer__inner{

@@ -1295,7 +1295,7 @@ footer {
 .contact-outer-wrapper{
   max-width: 93%;
   margin: auto;
-  padding: 45px;
+  padding: 25px 45px 120px 45px;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -1316,7 +1316,6 @@ input,
 select,
 textarea,
 button {
-  font-family: inherit;
   font-size: 100%;
 }
 
@@ -1448,6 +1447,25 @@ textarea {
   transform: translate(-110%, -50%);
 }
 
+.contact-dentails{
+  list-style: none;
+}
+
+.contact-dentails > li {
+  margin-bottom: 25px;
+}
+.contact-dentails > li > a {
+  text-decoration: none;
+  color: #171717;
+  margin-bottom: 25px;
+ font-weight: 900;
+}
+
+.contact-dentails > li > a > span{
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: underline;
+}
 .my-form button:enabled:hover .back,
 .my-form button:focus .back {
   transform: translate(-50%, -50%);
