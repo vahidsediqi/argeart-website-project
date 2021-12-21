@@ -844,6 +844,18 @@ span {
       max-width: 100%;
       height: auto;
     }
+   
+    .introduction{
+        padding-top: 65px;
+        padding-left: 0;
+        padding-right: 0;
+        margin:0;
+    }
+
+
+    .small-circle {
+        display: none;
+    }
   }
   
   @media (max-width: 1024px) {

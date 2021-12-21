@@ -284,6 +284,12 @@
     width: 25%;
 }
 
+
+.keyboard__section-web-design{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
 /* Site footer */
 
 .footer__inner{
