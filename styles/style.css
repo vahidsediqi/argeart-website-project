@@ -1292,6 +1292,26 @@ footer {
 
 /* Contact page */
 
+.contact-outer-wrapper{
+  max-width: 93%;
+  margin: auto;
+  padding: 45px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 35% 50%;
+  grid-gap: 10%;
+}
+
+
+.contact-page-image {
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+}
 input,
 select,
 textarea,
@@ -1365,8 +1385,7 @@ textarea {
 .my-form input:focus,
 .my-form textarea:focus,
 .my-form button:enabled:hover,
-.my-form button:focus,
-.my-form input[type="checkbox"]:focus + label {
+.my-form button:focus:focus + label {
   background: var(--bgFormElsFocus);
 }
 
@@ -1519,7 +1538,7 @@ textarea {
 }
 
 .contact-form-wrapper{
-    max-width: 65%;
+    max-width: 100%;
     margin: auto;
 }
 @media screen and (min-width: 541px) {
