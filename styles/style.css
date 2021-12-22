@@ -1,3 +1,5 @@
+/* Fontst */
+
 @font-face {
     font-family: 'GalanoGrotesque';
     src: url('../GalanoGrotesque-SemiBold.woff2') format('woff2'),
@@ -28,6 +30,11 @@
     font-display: swap;
 }
 
+
+/*
+---------------------------
+      GLOBAL STYLING 
+------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -116,9 +123,6 @@ span {
     margin-top: 2px;
 }
 
-.nav-btn.is-active span {
-    /* background-color: #fff; */
-}
 
 .nav-btn.is-active span:nth-child(1){
    margin-top: 10px;
@@ -158,16 +162,11 @@ span {
        padding: 45px;
        z-index: 99;
        transition: 1s;
-       /* opacity: 0;
-       visibility: hidden; */
        margin-top: -750px;
        
    }
 
-
    .menu.is-active{
-       /* opacity: 1;
-       visibility: visible; */
        margin-top: 0px;
    }
    .menu__list {
@@ -271,11 +270,6 @@ span {
      justify-content: center;
      margin-top: -98px;
      padding-top: 98px;
-    /* background-image: url("../images/mountain.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: contain
-    */
     z-index: 3;
  }
 
@@ -458,10 +452,6 @@ span {
     border-right: #010101 solid 2px;
     position: relative;
     padding-bottom: 55px;
-    /* background-image: url('../images/line.png');
-    background-size: 100%;
-    background-position: bottom right;
-    background-repeat: no-repeat; */
  }
 
  .line-image{
@@ -833,30 +823,7 @@ span {
     right: 20%;
   }
   
-  @media (max-width: 768px) {
-    .logo-container {
-      flex: 3;
-    }
-    .nav-links {
-      display: none;
-    }
-    .cover img {
-      max-width: 100%;
-      height: auto;
-    }
-   
-    .introduction{
-        padding-top: 65px;
-        padding-left: 0;
-        padding-right: 0;
-        margin:0;
-    }
 
-
-    .small-circle {
-        display: none;
-    }
-  }
   
   @media (max-width: 1024px) {
     .presentation {
@@ -1291,6 +1258,13 @@ footer {
   }
 
 /* Contact page */
+.contact-icon {
+  border: 1px solid rgb(110, 110, 110);
+  color:rgb(110, 110, 110);
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 50%;
+}
 
 .contact-outer-wrapper{
   max-width: 93%;
@@ -1529,43 +1503,4 @@ textarea {
     --borderFormEls: hsl(0, 0%, 10%);
     --bgFormElsFocus: #171717;
   }
-/* MQ
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (min-width: 600px) {
-  .my-form .grid {
-    display: grid;
-    grid-gap: 1.5rem;
-  }
 
-  .my-form .grid-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .my-form .grid-3 {
-    grid-template-columns: auto auto auto;
-    align-items: center;
-  }
-
-  .my-form .grid > *:not(:last-child) {
-    margin-bottom: 0;
-  }
-
-  .my-form .required-msg {
-    display: block;
-  }
-}
-
-.contact-form-wrapper{
-    max-width: 100%;
-    margin: auto;
-}
-@media screen and (min-width: 541px) {
-  .my-form input[type="checkbox"] + label::before {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .my-form input[type="checkbox"]:checked + label::after {
-    top: 3px;
-  }
-}

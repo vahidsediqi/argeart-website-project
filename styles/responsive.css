@@ -292,6 +292,8 @@
 }
 
 /* contact page */
+
+
 .contact-outer-wrapper{
     display: flex;
     flex-direction: column-reverse;
@@ -365,4 +367,67 @@ footer {
  .side-bar__icons{
     display: none;
 }
+  }
+
+  /* Subpages */
+
+  .nav-links {
+    display: none;
+  }
+  .cover img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  .introduction{
+      padding-top: 65px;
+      padding-left: 0;
+      padding-right: 0;
+      margin:0;
+  }
+
+
+  .small-circle {
+      display: none;
+  }
+
+  /* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 600px) {
+    .my-form .grid {
+      display: grid;
+      grid-gap: 1.5rem;
+    }
+  
+    .my-form .grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .my-form .grid-3 {
+      grid-template-columns: auto auto auto;
+      align-items: center;
+    }
+  
+    .my-form .grid > *:not(:last-child) {
+      margin-bottom: 0;
+    }
+  
+    .my-form .required-msg {
+      display: block;
+    }
+  }
+  
+  .contact-form-wrapper{
+      max-width: 100%;
+      margin: auto;
+  }
+  @media screen and (min-width: 541px) {
+    .my-form input[type="checkbox"] + label::before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .my-form input[type="checkbox"]:checked + label::after {
+      top: 3px;
+    }
   }
